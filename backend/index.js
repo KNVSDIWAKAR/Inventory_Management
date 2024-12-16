@@ -21,6 +21,7 @@ app.use(
     origin: ["https://frontendiq.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
