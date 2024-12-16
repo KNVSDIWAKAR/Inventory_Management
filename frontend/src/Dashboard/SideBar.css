@@ -1,0 +1,8 @@
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: auto !important;
+}
+.h-96 img {
+  max-width: 20px;
+  max-height: 20px;
+}
