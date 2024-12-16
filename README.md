@@ -47,13 +47,14 @@ An online shopping platform for gadgets, designed to offer a seamless user exper
 1. Clone the repository:  
 
    git clone https://github.com/KNVSDIWAKAR/Inventory_Management.git
+   ```  
    cd backend  
    ```  
-2. Install dependencies:  
-   ```bash  
+3. Install dependencies:  
+   ```  
    npm install  
    ```  
-3. Start the server:  
+4. Start the server:  
    ```
    node index.js  
    ```  
