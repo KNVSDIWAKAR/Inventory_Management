@@ -16,7 +16,7 @@ const AdminProducts = () => {
     });
   };
   useEffect(() => {
-    fetch("http://localhost:4000/view-product", {
+    fetch("https://iqbackend.vercel.app/view-product", {
       credentials: "include", // Include credentials in the request
     })
       .then((res) => res.json())

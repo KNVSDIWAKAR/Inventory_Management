@@ -71,7 +71,7 @@ const EditProducts = () => {
       Category,
       quantity,
     };
-    fetch(`http://localhost:4000/update-product/${id}`, {
+    fetch(`https://iqbackend.vercel.app/update-product/${id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

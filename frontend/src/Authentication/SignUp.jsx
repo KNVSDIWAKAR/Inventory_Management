@@ -13,7 +13,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/register", {
+      .post("https://iqbackend.vercel.app/register", {
         name,
         email,
         password,

@@ -17,7 +17,7 @@ const Store = () => {
     });
   };
   useEffect(() => {
-    fetch("http://localhost:4000/view-product", {
+    fetch("https://iqbackend.vercel.app/view-product", {
       credentials: "include",
     })
       .then((res) => res.json())

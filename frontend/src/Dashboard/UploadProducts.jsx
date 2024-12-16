@@ -68,7 +68,7 @@ const UploadProducts = () => {
     };
     console.log(gadgets);
 
-    fetch("http://localhost:4000/upload-product", {
+    fetch("https://iqbackend.vercel.app/upload-product", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

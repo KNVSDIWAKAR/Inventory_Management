@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://frontendiq.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PATCH", "PUT"],
     credentials: true,
   })
@@ -116,7 +116,10 @@ async function run() {
     // READ (VIEW PRODUCTS)
     app.get("/view-product", async (req, res) => {
       const gadgets = await store.find().toArray();
-      res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
+      res.setHeader(
+        "Access-Control-Allow-Origin",
+        "https://frontendiq.vercel.app"
+      );
       res.setHeader(
         "Access-Control-Allow-Methods",
         "GET, POST, OPTIONS, PUT, PATCH, DELETE"

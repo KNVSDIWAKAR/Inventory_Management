@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         path: "/product/:id",
         element: <SingleProduct />,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/product/${params.id}`),
+          fetch(`https://iqbackend.vercel.app/product/${params.id}`),
       },
     ],
   },
@@ -80,7 +80,7 @@ const router = createBrowserRouter([
         path: "/admin/dashboard/edit/:id",
         element: <EditProducts />,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/product/${params.id}`),
+          fetch(`https://iqbackend.vercel.app/product/${params.id}`),
       },
       {
         path: "/admin/dashboard/view-products",
@@ -90,7 +90,7 @@ const router = createBrowserRouter([
         path: "/admin/dashboard/single-product/:id",
         element: <AdminSingleProduct />,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/searchById/${params.id}`),
+          fetch(`https://iqbackend.vercel.app/searchById/${params.id}`),
       },
     ],
   },

@@ -18,7 +18,7 @@ function Login() {
     window.localStorage.setItem("isLoggedIn", true);
     // window.localStorage.setItem("role",res.data.role)
     axios
-      .post("http://localhost:4000/login", { email, password })
+      .post("https://iqbackend.vercel.app/login", { email, password })
       .then((res) => {
         console.log(res.data);
         if (res.data.Status === "Success") {

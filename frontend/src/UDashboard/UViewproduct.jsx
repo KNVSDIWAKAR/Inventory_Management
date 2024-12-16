@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const UViewproduct = () => {
   const [gadgets, SetGadgets] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/view-product")
+    fetch("https://iqbackend.vercel.app/view-product")
       .then((res) => res.json())
       .then((data) => SetGadgets(data));
   }, []);
